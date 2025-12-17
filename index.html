@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bernardo Antoniolli - Desenvolvedor Back-End & Especialista em IA Generativa">
+    <meta name="keywords" content="desenvolvedor, python, fastapi, ia, inteligência artificial, backend">
+    <meta name="author" content="Bernardo Antoniolli">
+    
+    <title>Bernardo Antoniolli | Back-End Developer & Gen AI</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Cursor personalizado -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-text">
+                <span>B</span><span>E</span><span>R</span><span>N</span><span>A</span><span>R</span><span>D</span><span>O</span>
+            </div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Background Effects -->
+    <div class="bg-effects">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+        <div class="noise-overlay"></div>
+        <div class="grid-overlay"></div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-text">BA</span>
+                <span class="logo-dot"></span>
+            </a>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active" data-text="Início">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link" data-text="Sobre">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link" data-text="Skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#education" class="nav-link" data-text="Educação">Educação</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link" data-text="Contato">Contato</a>
+                </li>
+            </ul>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-container container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span>
+                        <span class="badge-text">Disponível para projetos</span>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        <span class="title-line">
+                            <span class="title-word" data-animation="reveal">Bernardo</span>
+                        </span>
+                        <span class="title-line">
+                            <span class="title-word accent" data-animation="reveal">Antoniolli</span>
+                        </span>
+                    </h1>
+                    
+                    <div class="hero-role">
+                        <span class="role-bracket">[</span>
+                        <span class="role-text" id="typed-text"></span>
+                        <span class="role-cursor">|</span>
+                        <span class="role-bracket">]</span>
+                    </div>
+                    
+                    <p class="hero-description">
+                        Transformando ideias em <span class="highlight">código robusto</span> e 
+                        <span class="highlight">soluções inteligentes</span>. Especializado em 
+                        Python, FastAPI e Inteligência Artificial Generativa.
+                    </p>
+                    
+                    <div class="hero-cta">
+                        <a href="#contact" class="btn btn-primary">
+                            <span class="btn-text">Vamos conversar</span>
+                            <span class="btn-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </span>
+                        </a>
+                        <a href="#about" class="btn btn-secondary">
+                            <span class="btn-text">Explorar</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="visual-container">
+                        <div class="code-window">
+                            <div class="window-header">
+                                <div class="window-dots">
+                                    <span class="dot red"></span>
+                                    <span class="dot yellow"></span>
+                                    <span class="dot green"></span>
+                                </div>
+                                <span class="window-title">bernardo.py</span>
+                            </div>
+                            <div class="window-body">
+                                <pre><code><span class="code-keyword">class</span> <span class="code-class">Developer</span>:
+    <span class="code-keyword">def</span> <span class="code-function">__init__</span>(<span class="code-param">self</span>):
+        <span class="code-param">self</span>.name = <span class="code-string">"Bernardo"</span>
+        <span class="code-param">self</span>.role = <span class="code-string">"Back-End Dev"</span>
+        <span class="code-param">self</span>.skills = [
+            <span class="code-string">"Python"</span>,
+            <span class="code-string">"FastAPI"</span>,
+            <span class="code-string">"Gen AI"</span>
+        ]
+    
+    <span class="code-keyword">def</span> <span class="code-function">create_magic</span>(<span class="code-param">self</span>):
+        <span class="code-keyword">return</span> <span class="code-string">"🚀 Building..."</span></code></pre>
+                            </div>
+                        </div>
+                        
+                        <div class="floating-elements">
+                            <div class="float-card card-1">
+                                <span class="card-icon">🐍</span>
+                                <span class="card-text">Python</span>
+                            </div>
+                            <div class="float-card card-2">
+                                <span class="card-icon">⚡</span>
+                                <span class="card-text">FastAPI</span>
+                            </div>
+                            <div class="float-card card-3">
+                                <span class="card-icon">🤖</span>
+                                <span class="card-text">Gen AI</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <span class="scroll-text">Scroll</span>
+                <div class="scroll-line">
+                    <div class="scroll-dot"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">01</span>
+                    <h2 class="section-title">
+                        <span class="title-decoration">Sobre</span> Mim
+                    </h2>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-content">
+                        <div class="about-text">
+                            <p class="text-large">
+                                Sou um desenvolvedor <span class="text-accent">apaixonado por tecnologia</span> 
+                                e inovação, focado em criar soluções que fazem a diferença.
+                            </p>
+                            <p>
+                                Com experiência em desenvolvimento back-end, automação de processos e 
+                                integração de APIs, busco sempre entregar código limpo, eficiente e escalável.
+                            </p>
+                            <p>
+                                Atualmente mergulhando no universo da <span class="text-accent">Inteligência Artificial 
+                                Generativa</span>, explorando as possibilidades de LLMs e como eles podem 
+                                transformar a maneira como construímos software.
+                            </p>
+                        </div>
+                        
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <span class="stat-number" data-count="2">0</span>
+                                <span class="stat-label">Anos estudando</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-count="10">0</span>
+                                <span class="stat-label">Projetos</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-count="100">0</span>
+                                <span class="stat-symbol">%</span>
+                                <span class="stat-label">Dedicação</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-info">
+                        <div class="info-card">
+                            <h3 class="info-title">
+                                <span class="info-icon">🌍</span>
+                                Idiomas
+                            </h3>
+                            <div class="languages">
+                                <div class="language-item">
+                                    <div class="language-header">
+                                        <span class="language-name">Português</span>
+                                        <span class="language-level">Nativo</span>
+                                    </div>
+                                    <div class="language-bar">
+                                        <div class="language-progress" data-width="100"></div>
+                                    </div>
+                                </div>
+                                <div class="language-item">
+                                    <div class="language-header">
+                                        <span class="language-name">Inglês</span>
+                                        <span class="language-level">Intermediário</span>
+                                    </div>
+                                    <div class="language-bar">
+                                        <div class="language-progress" data-width="60"></div>
+                                    </div>
+                                </div>
+                                <div class="language-item">
+                                    <div class="language-header">
+                                        <span class="language-name">Espanhol</span>
+                                        <span class="language-level">Básico</span>
+                                    </div>
+                                    <div class="language-bar">
+                                        <div class="language-progress" data-width="30"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card location-card">
+                            <div class="location-icon">📍</div>
+                            <div class="location-info">
+                                <span class="location-city">Brasil</span>
+                                <span class="location-status">
+                                    <span class="status-dot"></span>
+                                    Remoto / Híbrido
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills section" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">02</span>
+                    <h2 class="section-title">
+                        Skills & <span class="title-decoration">Tech Stack</span>
+                    </h2>
+                </div>
+                
+                <div class="skills-container">
+                    <div class="skills-category">
+                        <h3 class="category-title">
+                            <span class="category-icon">💻</span>
+                            Core Technologies
+                        </h3>
+                        <div class="skills-grid">
+                            <div class="skill-card" data-skill="python">
+                                <div class="skill-icon">
+                                    <svg viewBox="0 0 128 128">
+                                        <linearGradient id="python-original-a" gradientUnits="userSpaceOnUse" x1="70.252" y1="1237.476" x2="170.659" y2="1151.089" gradientTransform="matrix(.563 0 0 -.568 -29.215 707.817)"><stop offset="0" stop-color="#5A9FD4"/><stop offset="1" stop-color="#306998"/></linearGradient>
+                                        <linearGradient id="python-original-b" gradientUnits="userSpaceOnUse" x1="209.474" y1="1098.811" x2="173.62" y2="1149.537" gradientTransform="matrix(.563 0 0 -.568 -29.215 707.817)"><stop offset="0" stop-color="#FFD43B"/><stop offset="1" stop-color="#FFE873"/></linearGradient>
+                                        <path fill="url(#python-original-a)" d="M63.391 1.988c-4.222.02-8.252.379-11.8 1.007-10.45 1.846-12.346 5.71-12.346 12.837v9.411h24.693v3.137H29.977c-7.176 0-13.46 4.313-15.426 12.521-2.268 9.405-2.368 15.275 0 25.096 1.755 7.311 5.947 12.519 13.124 12.519h8.491V67.234c0-8.151 7.051-15.34 15.426-15.34h24.665c6.866 0 12.346-5.654 12.346-12.548V15.833c0-6.693-5.646-11.72-12.346-12.837-4.244-.706-8.645-1.027-12.866-1.008zM50.037 9.557c2.55 0 4.634 2.117 4.634 4.721 0 2.593-2.083 4.69-4.634 4.69-2.56 0-4.633-2.097-4.633-4.69-.001-2.604 2.073-4.721 4.633-4.721z"/>
+                                        <path fill="url(#python-original-b)" d="M91.682 28.38v10.966c0 8.5-7.208 15.655-15.426 15.655H51.591c-6.756 0-12.346 5.783-12.346 12.549v23.515c0 6.691 5.818 10.628 12.346 12.547 7.816 2.297 15.312 2.713 24.665 0 6.216-1.801 12.346-5.423 12.346-12.547v-9.412H63.938v-3.138h37.012c7.176 0 9.852-5.005 12.348-12.519 2.578-7.735 2.467-15.174 0-25.096-1.774-7.145-5.161-12.521-12.348-12.521h-9.268zM77.809 87.927c2.561 0 4.634 2.097 4.634 4.692 0 2.602-2.074 4.719-4.634 4.719-2.55 0-4.633-2.117-4.633-4.719 0-2.595 2.083-4.692 4.633-4.692z"/>
+                                    </svg>
+                                </div>
+                                <div class="skill-info">
+                                    <h4 class="skill-name">Python</h4>
+                                    <span class="skill-level">Avançado</span>
+                                </div>
+                                <div class="skill-glow"></div>
+                            </div>
+                            
+                            <div class="skill-card" data-skill="fastapi">
+                                <div class="skill-icon">
+                                    <svg viewBox="0 0 128 128">
+                                        <path fill="#009688" d="M64 0C28.654 0 0 28.654 0 64s28.654 64 64 64 64-28.654 64-64S99.346 0 64 0zm0 14c27.57 0 50 22.43 50 50s-22.43 50-50 50-50-22.43-50-50 22.43-50 50-50z"/>
+                                        <path fill="#009688" d="M64 32L40 80h16v16l24-48H64V32z"/>
+                                    </svg>
+                                </div>
+                                <div class="skill-info">
+                                    <h4 class="skill-name">FastAPI</h4>
+                                    <span class="skill-level">Avançado</span>
+                                </div>
+                                <div class="skill-glow"></div>
+                            </div>
+                            
+                            <div class="skill-card" data-skill="postgresql">
+                                <div class="skill-icon">
+                                    <svg viewBox="0 0 128 128">
+                                        <path fill="#336791" d="M93.809 92.112c.785-6.533.55-7.492 5.416-6.433l1.235.108c3.742.17 8.637-.602 11.513-1.938 6.191-2.873 9.861-7.668 3.758-6.409-13.924 2.873-14.881-1.842-14.881-1.842 14.703-21.815 20.849-49.508 15.543-56.287-14.47-18.489-39.517-9.746-39.936-9.52l-.134.025c-2.751-.571-5.83-.912-9.289-.968-6.301-.104-11.082 1.657-14.709 4.402 0 0-44.683-18.409-42.604 23.151.442 8.841 12.672 66.898 27.26 49.362 5.332-6.412 10.484-11.834 10.484-11.834 2.558 1.699 5.622 2.567 8.834 2.255l.249-.212c-.078.796-.044 1.575.099 2.497-3.757 4.199-2.653 4.936-10.166 6.482-7.602 1.566-3.136 4.355-.221 5.084 3.535.884 11.712 2.136 17.238-5.598l-.22.882c1.474 1.18 1.375 8.477 1.583 13.69.208 5.214.558 10.079 1.621 12.948 1.063 2.868 2.317 10.256 12.191 8.14 8.252-1.764 14.561-4.309 15.136-27.985"/>
+                                        <path fill="#fff" d="M75.458 125.256c-4.367 0-7.211-1.689-8.938-3.32-2.607-2.46-3.641-5.629-4.259-7.522l-.267-.79c-1.244-3.358-1.666-8.193-1.916-14.419-.038-.935-.064-1.898-.093-2.919-.096-3.381-.209-7.376-.706-8.944-.161-.508-.239-.783-.239-.783s-.76 1.797-1.078 2.617c-.43 1.109-.764 1.968-.927 2.22-1.754 2.715-4.236 4.134-7.384 4.134-1.798 0-3.769-.457-5.866-1.359-4.358-1.873-5.436-4.287-5.436-5.846 0-.836.282-1.484.749-1.945.847-.833 2.143-1.099 3.539-1.099 1.238 0 2.496.196 3.569.352.753.109 1.404.204 1.869.204.603 0 .755-.093.878-.201.432-.379.624-1.286.624-2.94 0-1.037-.047-2.139-.095-3.286-.137-3.29-.292-7.02.498-9.592.162-.527.353-1.027.572-1.496-.326.049-.652.098-.979.147-3.771.567-8.04 1.21-12.483-.074-4.442-1.285-5.91-3.466-6.127-4.746-.27-1.588.263-3.454 1.46-5.105 2.199-3.035 6.323-5.471 10.39-6.133 3.536-.577 8.238-.645 12.098.168l-.007-.071c-.015-.157-.027-.324-.032-.498l-.004-.204-.014-.211c-.047-.702-.088-1.308-.088-1.843 0-3.062.87-5.637 2.587-7.659 1.717-2.023 4.139-3.411 7.208-4.133 2.074-.487 4.352-.741 6.779-.755l.272-.002c2.708 0 5.272.298 7.617.886l.596.152.256-.451c2.69-4.735 7.863-7.555 13.839-7.555 2.576 0 5.284.484 8.057 1.438 2.773.954 5.22 2.292 7.269 3.974 1.987 1.632 3.492 3.539 4.473 5.667 1.181 2.564 1.538 5.091 1.062 7.514-.442 2.254-1.493 4.166-3.127 5.688-1.634 1.521-3.706 2.531-6.161 3.002-2.456.472-5.019.357-7.62-.34-2.598-.698-4.912-1.9-6.877-3.576l-.293-.25-.186.34c-.988 1.802-1.511 4.007-1.553 6.549l-.003.32c0 .201.002.387.005.56l.005.127-.003.09c-.008.211-.012.419-.012.623 0 .791.046 1.562.137 2.297.09.735.246 1.425.463 2.054.217.628.513 1.187.879 1.659.366.473.825.847 1.365 1.112.541.264 1.188.423 1.924.473.736.05 1.573-.018 2.492-.204 1.013-.206 1.964-.51 2.829-.904.866-.394 1.617-.838 2.234-1.318.617-.481 1.07-.956 1.345-1.414.274-.457.41-.847.406-1.157-.004-.311-.111-.525-.318-.635-.208-.11-.558-.096-1.042.042-.484.138-1.082.422-1.78.849-.698.427-1.492 1.013-2.369 1.745l-.003.003c-1.02.851-1.959 1.452-2.793 1.786-.833.335-1.54.404-2.099.206-.559-.198-.985-.66-1.266-1.374-.281-.714-.418-1.686-.406-2.889.012-1.204.173-2.641.481-4.272.308-1.631.752-3.45 1.325-5.408 1.077-3.678 2.475-6.987 4.158-9.839l.256-.435-.369-.338c-1.67-1.529-2.884-3.378-3.61-5.499-.727-2.12-.963-4.409-.706-6.808.258-2.399 1.025-4.681 2.281-6.787 1.257-2.106 2.996-3.937 5.169-5.443 2.174-1.507 4.769-2.635 7.713-3.353 2.944-.718 6.138-.999 9.494-.834 3.356.164 6.58.79 9.585 1.862 3.006 1.071 5.682 2.56 7.955 4.423 2.274 1.863 4.011 4.059 5.165 6.524.647 1.384 1.059 2.83 1.222 4.295.163 1.466.065 2.912-.293 4.297-.357 1.385-.963 2.697-1.8 3.894-.837 1.197-1.897 2.26-3.149 3.154-2.019 1.442-4.361 2.35-6.963 2.702-2.603.352-5.269.122-7.927-.684l-.394-.12-.184.371c-.677 1.367-1.093 2.959-1.236 4.731-.143 1.772-.005 3.724.411 5.802.417 2.078 1.117 4.269 2.078 6.52.961 2.25 2.181 4.551 3.628 6.843l.218.345.35-.2c.844-.48 1.612-1.097 2.284-1.836.672-.738 1.24-1.59 1.689-2.53.449-.94.777-1.959.976-3.027.199-1.069.27-2.192.21-3.334-.059-1.142-.25-2.306-.568-3.459-.318-1.152-.765-2.287-1.333-3.369-.567-1.082-1.256-2.111-2.05-3.052l-.247-.292-.318.208c-.764.499-1.468 1.136-2.093 1.894-.625.758-1.16 1.633-1.592 2.599-.432.966-.756 2.019-.963 3.128-.206 1.109-.298 2.269-.272 3.447.027 1.178.17 2.368.43 3.537.259 1.169.633 2.312 1.114 3.395.481 1.084 1.07 2.104 1.755 3.027.685.924 1.474 1.747 2.348 2.441l.271.215.229-.26c1.026-1.167 1.869-2.469 2.506-3.871.637-1.402 1.058-2.902 1.253-4.457.195-1.556.161-3.16-.101-4.766-.261-1.606-.75-3.178-1.454-4.674l-.166-.354-.363.138c-1.08.41-2.018 1.016-2.79 1.799-.772.783-1.372 1.738-1.784 2.835-.412 1.097-.637 2.334-.668 3.676-.031 1.342.134 2.792.49 4.304.355 1.512.897 3.085 1.611 4.673.714 1.588 1.6 3.19 2.635 4.758l.16.243.261-.131c1.297-.651 2.411-1.488 3.314-2.488.904-1 1.597-2.165 2.063-3.461.466-1.296.698-2.728.693-4.255-.005-1.527-.247-3.151-.721-4.826-.474-1.675-1.178-3.402-2.098-5.133l-.14-.263-.276.108c-1.155.451-2.192 1.094-3.084 1.909-.893.815-1.639 1.797-2.221 2.918-.582 1.122-.998 2.382-1.238 3.744-.24 1.362-.302 2.827-.185 4.357.117 1.53.413 3.127.879 4.749.466 1.621 1.1 3.263 1.887 4.883l.12.246.256-.1c1.254-.49 2.367-1.147 3.31-1.953.944-.806 1.717-1.761 2.299-2.837.582-1.076.972-2.273 1.162-3.556.189-1.282.176-2.651-.041-4.067-.217-1.416-.635-2.875-1.245-4.335-.611-1.46-1.412-2.924-2.39-4.347l-.149-.217-.234.121c-1.143.591-2.152 1.36-3.002 2.289-.851.929-1.539 2.015-2.047 3.229-.509 1.213-.835 2.554-.973 3.986-.138 1.431-.085 2.955.157 4.526.243 1.571.675 3.192 1.287 4.816.612 1.623 1.402 3.247 2.352 4.823l.148.245.257-.119c1.202-.556 2.263-1.27 3.156-2.12.893-.849 1.616-1.833 2.153-2.922.536-1.09.883-2.283 1.033-3.548.15-1.265.102-2.602-.143-3.973-.244-1.371-.683-2.772-1.308-4.165-.625-1.393-1.434-2.778-2.41-4.114l-.153-.209-.228.138c-1.096.663-2.056 1.489-2.856 2.458-.8.97-1.435 2.078-1.893 3.296-.458 1.217-.736 2.544-.828 3.943-.092 1.399.003 2.869.283 4.373.281 1.504.746 3.04 1.384 4.567.639 1.527 1.451 3.042 2.42 4.5l.151.227.245-.132c1.143-.616 2.148-1.386 2.991-2.287.844-.902 1.523-1.933 2.023-3.064.499-1.131.815-2.361.943-3.657.128-1.295.066-2.658-.186-4.05-.251-1.393-.693-2.814-1.315-4.222-.622-1.409-1.424-2.808-2.389-4.157l-.152-.212-.23.138c-.972.583-1.831 1.299-2.561 2.131-.729.832-1.324 1.78-1.774 2.818-.45 1.038-.752 2.167-.901 3.356-.15 1.188-.144 2.437.016 3.71.161 1.273.479 2.57.947 3.854.469 1.284 1.085 2.553 1.838 3.773l.117.19.203-.103c.889-.451 1.69-1.011 2.385-1.664.695-.652 1.28-1.396 1.745-2.209.464-.813.804-1.695 1.013-2.619.209-.924.287-1.892.234-2.878-.054-.986-.239-1.989-.555-2.983-.316-.994-.763-1.976-1.335-2.918l-.181-.298-.268.222c-.718.595-1.304 1.309-1.745 2.122-.441.812-.737 1.723-.884 2.702-.147.978-.143 2.025.013 3.108.157 1.083.465 2.203.922 3.326.457 1.123 1.063 2.249 1.808 3.343l.094.138.149-.079c.83-.437 1.575-.978 2.218-1.607.643-.628 1.182-1.345 1.606-2.128.424-.783.73-1.631.912-2.522.182-.89.237-1.822.164-2.768-.072-.945-.274-1.903-.601-2.843-.328-.94-.78-1.862-1.352-2.738l-.09-.138-.147.08c-.716.392-1.357.875-1.91 1.435-.553.56-1.016 1.197-1.381 1.891-.365.694-.631 1.446-.795 2.235-.164.79-.225 1.616-.182 2.458.044.842.191 1.7.44 2.549.249.849.6 1.689 1.047 2.495l.091.164.171-.082c.733-.352 1.388-.787 1.953-1.294.565-.507 1.038-1.086 1.41-1.719.372-.633.642-1.32.807-2.04.165-.721.225-1.476.18-2.246-.046-.77-.197-1.555-.454-2.332-.258-.777-.62-1.547-1.082-2.286l-.074-.118-.127.063c-.693.342-1.315.768-1.854 1.267-.538.499-.992 1.07-1.354 1.697-.363.626-.633 1.308-.809 2.026-.176.718-.258 1.472-.247 2.245.012.772.119 1.563.319 2.352.201.789.495 1.575.881 2.337l.061.12.127-.054c.674-.289 1.282-.654 1.815-1.087.533-.433.991-.933 1.369-1.488.377-.555.673-1.165.883-1.812.21-.647.336-1.329.378-2.029.042-.7-.001-1.418-.128-2.134-.126-.716-.337-1.428-.63-2.117l-.047-.111-.117.045c-.652.251-1.243.578-1.764.975-.521.397-.971.863-1.345 1.385-.373.522-.668 1.099-.885 1.714-.216.615-.352 1.267-.408 1.939-.055.672-.028 1.364.08 2.059.109.694.299 1.39.57 2.071l.043.108.113-.039c.619-.214 1.181-.497 1.681-.842.5-.345.939-.752 1.312-1.212.373-.46.68-.973.919-1.526.239-.552.41-1.143.512-1.759.102-.617.137-1.258.103-1.908-.033-.65-.133-1.307-.3-1.956l-.027-.105-.108.024c-.589.13-1.13.329-1.62.59-.489.26-.927.583-1.311.959-.384.376-.713.806-.985 1.28-.271.474-.485.991-.641 1.542-.157.551-.256 1.136-.297 1.744-.042.608-.027 1.239.044 1.881l.011.103.106-.006c.583-.033 1.126-.132 1.624-.296.498-.163.952-.391 1.361-.678.409-.287.772-.633 1.087-1.029.316-.396.584-.841.804-1.328.22-.487.392-1.015.515-1.576.124-.56.2-1.153.228-1.768l.004-.099-.098-.014c-.577-.082-1.124-.099-1.638-.051-.513.049-.994.163-1.441.341-.447.178-.86.419-1.237.719-.378.3-.719.66-1.023 1.072-.303.411-.568.875-.793 1.381-.225.507-.41 1.055-.554 1.637l-.023.093.091.029c.551.176 1.079.289 1.581.337.502.049.979.035 1.429-.041.45-.076.873-.215 1.269-.416.396-.201.765-.464 1.107-.786.343-.323.658-.705.946-1.142.288-.437.549-.929.783-1.47l.037-.085-.083-.043c-.526-.271-1.043-.479-1.549-.625-.506-.146-.999-.23-1.478-.253-.479-.023-.943.017-1.392.118-.448.101-.881.263-1.299.485-.417.222-.819.503-1.206.842-.387.338-.759.735-1.116 1.186l-.057.072.068.061c.496.447.995.818 1.495 1.112.5.294.999.511 1.497.651.498.14.992.203 1.483.188.49-.015.975-.108 1.456-.279.481-.171.957-.42 1.428-.746.471-.326.937-.729 1.399-1.209l.073-.076-.071-.078c-.465-.507-.944-.942-1.435-1.304-.491-.362-.993-.652-1.507-.869-.513-.217-1.037-.36-1.571-.431-.535-.071-1.079-.068-1.633.008-.554.077-1.117.227-1.69.452-.572.224-1.153.522-1.743.893l-.094.059.053.097c.393.713.822 1.343 1.286 1.891.463.548.959 1.012 1.488 1.394.528.381 1.088.678 1.679.891.591.213 1.212.343 1.864.39.652.046 1.333.009 2.044-.111.711-.12 1.451-.323 2.22-.61l.122-.045-.035-.127c-.269-.967-.601-1.848-.997-2.644-.396-.796-.854-1.506-1.375-2.132-.521-.626-1.103-1.166-1.748-1.621-.644-.455-1.351-.824-2.12-1.11-.769-.285-1.599-.484-2.493-.597-.893-.113-1.848-.139-2.866-.078l-.161.01.028.159c.218 1.24.527 2.377.927 3.411.4 1.034.889 1.963 1.467 2.788.578.825 1.244 1.545 1.998 2.16.754.616 1.596 1.128 2.525 1.537.929.409 1.944.714 3.046.915 1.102.201 2.29.299 3.563.293l.201-.001-.026-.2c-.209-1.612-.528-3.097-.958-4.456-.43-1.359-.967-2.593-1.612-3.701-.644-1.109-1.394-2.093-2.249-2.953-.855-.86-1.816-1.596-2.882-2.209-1.065-.612-2.234-1.1-3.508-1.463-1.273-.364-2.65-.603-4.129-.718l-.233-.018.035.231c.285 1.877.68 3.607 1.186 5.19.505 1.584 1.12 3.021 1.844 4.312.724 1.291 1.556 2.437 2.498 3.437.941 1 1.99 1.855 3.148 2.566 1.158.711 2.423 1.277 3.797 1.699 1.374.422 2.855.7 4.443.834l.251.021-.044-.247c-.363-2.046-.847-3.922-1.452-5.629-.606-1.707-1.332-3.245-2.179-4.613-.847-1.368-1.813-2.567-2.898-3.598-1.086-1.03-2.29-1.892-3.613-2.586-1.323-.695-2.764-1.221-4.322-1.581-1.558-.36-3.233-.553-5.023-.579l-.282-.004.052.278c.439 2.355 1.016 4.515 1.732 6.479.716 1.965 1.57 3.734 2.563 5.309.993 1.575 2.123 2.956 3.39 4.143 1.268 1.187 2.672 2.18 4.213 2.98 1.54.8 3.216 1.407 5.027 1.821 1.811.414 3.758.635 5.84.664l.327.005-.078-.318c-.663-2.705-1.484-5.174-2.463-7.407-.979-2.233-2.115-4.231-3.407-5.994-1.292-1.762-2.739-3.289-4.341-4.582-1.602-1.292-3.358-2.35-5.268-3.173-1.91-.823-3.973-1.41-6.189-1.762-2.216-.352-4.585-.468-7.105-.349l-.397.019.11.382c.952 3.287 2.095 6.273 3.43 8.958 1.334 2.686 2.858 5.071 4.571 7.157 1.714 2.086 3.615 3.874 5.704 5.363 2.089 1.489 4.364 2.679 6.825 3.572 2.462.892 5.109 1.485 7.943 1.78 2.834.294 5.853.289 9.056-.016l.504-.048-.186-.47c-1.626-4.1-3.506-7.787-5.64-11.06-2.134-3.274-4.52-6.134-7.158-8.581-2.638-2.447-5.528-4.481-8.669-6.103-3.142-1.621-6.534-2.829-10.177-3.624-3.644-.795-7.538-1.177-11.684-1.145-4.146.031-8.542.476-13.188 1.333l-.73.135.299.678c2.617 5.936 5.609 11.28 8.977 16.03 3.367 4.751 7.108 8.909 11.222 12.475 4.114 3.566 8.599 6.54 13.455 8.922 4.856 2.381 10.081 4.17 15.676 5.368 5.594 1.197 11.555 1.802 17.884 1.814 6.328.012 13.021-.569 20.079-1.742l1.109-.185-.585-.954c-5.216-8.506-11.057-15.942-17.524-22.309-6.467-6.366-13.559-11.663-21.276-15.888-7.717-4.226-16.057-7.381-25.02-9.465-8.963-2.085-18.548-3.098-28.756-3.041-10.208.058-21.036 1.186-32.485 3.384l-1.803.346.952 1.549c8.5 13.835 18.056 25.693 28.668 35.575 10.612 9.881 22.279 17.786 35.001 23.714 12.722 5.929 26.497 9.881 41.326 11.856 14.828 1.976 30.708 1.974 47.64-.005l2.663-.311-1.604-2.176c-14.369-19.499-30.512-35.789-48.429-48.869-17.918-13.08-37.61-22.951-59.078-29.613-21.467-6.662-44.707-10.116-69.722-10.362-25.015-.245-51.799 2.719-80.353 8.892l-4.493.972 3.111 3.444c24.94 27.608 52.432 49.834 82.475 66.679 30.044 16.845 62.637 28.309 97.78 34.391 35.143 6.082 72.834 6.783 113.073 2.103 40.239-4.68 83.024-14.741 128.355-30.184l7.13-2.43-6.057-4.374c-39.687-28.682-82.162-50.693-127.426-66.033-45.264-15.341-93.316-24.012-144.156-26.014-50.84-2.002-104.466 2.665-160.878 13.999-56.412 11.334-115.611 29.335-177.597 54.002"/>
+                                    </svg>
+                                </div>
+                                <div class="skill-info">
+                                    <h4 class="skill-name">PostgreSQL</h4>
+                                    <span class="skill-level">Intermediário</span>
+                                </div>
+                                <div class="skill-glow"></div>
+                            </div>
+                            
+                            <div class="skill-card" data-skill="genai">
+                                <div class="skill-icon emoji-icon">🤖</div>
+                                <div class="skill-info">
+                                    <h4 class="skill-name">Gen AI / LLMs</h4>
+                                    <span class="skill-level">Avançado</span>
+                                </div>
+                                <div class="skill-glow"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skills-category">
+                        <h3 class="category-title">
+                            <span class="category-icon">🔧</span>
+                            Ferramentas & Automação
+                        </h3>
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <div class="skill-icon emoji-icon">🔄</div>
+                                <div class="skill-info">
+                                    <h4 class="skill-name">N8N</h4>
+                                    <span class="skill-level">Intermediário</span>
+                                </div>
+                                <div class="skill-glow"></div>
+                            </div>
+                            
+                            <div class="skill-card">
+                                <div class="skill-icon emoji-icon">⚡</div>
+                                <div class="skill-info">
+                                    <h4 class="skill-name">Zapier</h4>
+                                    <span class="skill-level">Intermediário</span>
+                                </div>
+                                <div class="skill-glow"></div>
+                            </div>
+                            
+                            <div class="skill-card">
+                                <div class="skill-icon emoji-icon">🚀</div>
+                                <div class="skill-info">
+                                    <h4 class="skill-name">CI/CD</h4>
+                                    <span class="skill-level">Básico</span>
+                                </div>
+                                <div class="skill-glow"></div>
+                            </div>
+                            
+                            <div class="skill-card">
+                                <div class="skill-icon emoji-icon">🐙</div>
+                                <div class="skill-info">
+                                    <h4 class="skill-name">Git / GitHub</h4>
+                                    <span class="skill-level">Intermediário</span>
+                                </div>
+                                <div class="skill-glow"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="education section" id="education">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">03</span>
+                    <h2 class="section-title">
+                        <span class="title-decoration">Educação</span>
+                    </h2>
+                </div>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <span class="marker-dot"></span>
+                            <span class="marker-line"></span>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="education-card">
+                                <div class="card-header">
+                                    <div class="card-icon">🎓</div>
+                                    <div class="card-badge">Em andamento</div>
+                                </div>
+                                <h3 class="card-title">Bacharelado em Ciência da Computação</h3>
+                                <p class="card-institution">Universidade Estácio de Sá (UNESA)</p>
+                                <p class="card-period">2024 — 2028</p>
+                                <div class="card-tags">
+                                    <span class="tag">Algoritmos</span>
+                                    <span class="tag">Estruturas de Dados</span>
+                                    <span class="tag">Banco de Dados</span>
+                                    <span class="tag">IA</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-content">
+                        <div class="section-header">
+                            <span class="section-tag">04</span>
+                            <h2 class="section-title">
+                                Vamos <span class="title-decoration">Conversar?</span>
+                            </h2>
+                        </div>
+                        
+                        <p class="contact-text">
+                            Estou sempre aberto a novas oportunidades, colaborações e projetos 
+                            interessantes. Se você tem uma ideia ou proposta, adoraria ouvir!
+                        </p>
+                        
+                        <div class="contact-links">
+                            <a href="https://www.linkedin.com/in/bernardoantoniolli/" target="_blank" rel="noopener noreferrer" class="contact-link linkedin">
+                                <div class="link-icon">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                    </svg>
+                                </div>
+                                <div class="link-content">
+                                    <span class="link-label">LinkedIn</span>
+                                    <span class="link-value">bernardoantoniolli</span>
+                                </div>
+                                <div class="link-arrow">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                                    </svg>
+                                </div>
+                            </a>
+                            
+                            <a href="https://github.com/duskkmusic" target="_blank" rel="noopener noreferrer" class="contact-link github">
+                                <div class="link-icon">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </div>
+                                <div class="link-content">
+                                    <span class="link-label">GitHub</span>
+                                    <span class="link-value">duskkmusic</span>
+                                </div>
+                                <div class="link-arrow">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-visual">
+                        <div class="visual-card">
+                            <div class="card-glow"></div>
+                            <div class="card-content">
+                                <div class="emoji-large">🚀</div>
+                                <p class="card-message">Pronto para o próximo desafio!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">
+                    Feito com <span class="heart">♥</span> por Bernardo Antoniolli
+                </p>
+                <p class="footer-year">© 2024</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
